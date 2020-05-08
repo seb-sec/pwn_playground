@@ -1,7 +1,7 @@
 # some different CFLAGS that may be of interest- add them to the EXTRA_FLAGS variable
 #
-# -fno-stack-protector 	: Disable stack canaries
-# -fstack-protector 	: Enable stack canaries
+# -fno-stack-protector 		: Disable stack canaries
+# -fstack-protector 		: Enable stack canaries
 #
 #  -fPIE -pie 			: Enable Position Independent Execution (PIE) (off by default)
 #
