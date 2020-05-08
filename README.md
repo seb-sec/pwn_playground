@@ -57,7 +57,7 @@ Here is a brief overview of the current program features:
 
 <br>
 
-More information as well as helpful resources for each topic is given [here](seb-sec.github.io/2020/05/06/pwn-playground.html)
+More information as well as helpful resources for each topic is given [here](https://seb-sec.github.io/2020/05/06/pwn-playground.html)
 
 <br>
 
