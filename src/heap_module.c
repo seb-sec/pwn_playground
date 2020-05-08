@@ -13,7 +13,7 @@ void init_heap_module() {
 void new_chunk() {
 	/* case max allocations made */
 	if (alloc_idx >= MAX_CHUNKS) {
-		puts("Max allocations reached! Use the 'Clear allocations' option to reset the array");
+		puts("Max allocations reached!");
 		return;
 	}
 	puts("Enter size of chunk:");
