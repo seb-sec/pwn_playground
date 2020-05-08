@@ -70,13 +70,13 @@ If you wish to change the version of libc used by the program (e.g. for exploiti
 Run the binary with the following:
 
 ```
-$ LD_PRELOAD="/path/to/libc" ./pwn-playground
+$ LD_PRELOAD="/path/to/libc" ./pwn_playground
 ```
 
 Any normal exploit script used must also pass an environment dictionary to the `process()` function
 
 ```python
-p = process("./pwn-playground", env={"LD_PRELOAD":"/path/to/libc"})
+p = process("./pwn_playground", env={"LD_PRELOAD":"/path/to/libc"})
 ```
 
 If using the init_process function in the provided API, pass it the env dictionary as an argument instead.
@@ -85,8 +85,8 @@ If using the init_process function in the provided API, pass it the env dictiona
 
 You can point the ELF to use the desired library by using:
 ```
-$ patchelf --add-needed /path/to/libc ./pwn-playground
+$ patchelf --add-needed /path/to/libc ./pwn_playground
 ```
 
-This will take precendence over the default libc.so.6 (see `patchelf --print-needed ./pwn-playground`), but you could replace the default entirely it if you wish with `patchelf --replace-needed libc.so.6 /path/to/libc ./pwn-playground`
+This will take precendence over the default libc.so.6 (see `patchelf --print-needed ./pwn_playground`), but you could replace the default entirely it if you wish with `patchelf --replace-needed libc.so.6 /path/to/libc ./pwn_playground`
 
