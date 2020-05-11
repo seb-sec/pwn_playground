@@ -65,7 +65,7 @@ void leak_segment() {
 }
 
 void arb_r() {
-	puts("Enter an address to from (base 10 value):");
+	puts("Enter an address to read from (base 10 value):");
 	unsigned long addr;
 	scanf("%lu", &addr);
 	flush();
